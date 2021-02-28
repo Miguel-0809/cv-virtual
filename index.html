@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/logo_mini.jpg" type="image/x-icon">
+
+    <!--Style-->
+    <link rel="stylesheet" href="static/style/style.css">
+
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" />
+    <!--Animate CSS-->
+
+    <script src="https://kit.fontawesome.com/e76b00227b.js" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Miguel, Web Developer</title>
+
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="homeNav">
+        <span class="toggle-btn" onclick="toggleNav()" >&#9776;</span>
+        <a id="resume" href="static/pages/cv.html" target="_blank">Resume</a>
+       
+    </nav>
+    
+
+    <nav class="sidebar active">
+        <ul>
+            <li>
+                <img class="animate__animated animate__flipInY" src='static/images/sidebar.png' alt="logo" />
+                <span class="sideName navText">Miguel,<br>Web Developer</span>
+            </li>
+            <li class="animate__animated animate__lightSpeedInRight">
+                <a href="#home" onclick="responsiveToggle()"><i class="fas fa-home"></i><span class="navText">Home</span></a>
+            </li>
+            <li class="animate__animated animate__lightSpeedInLeft">
+                <a href="#about" onclick="responsiveToggle()"><i class="fas fa-user-alt"></i><span class="navText">About</span></a>
+            </li>
+            <li class="animate__animated animate__lightSpeedInRight">
+                <a href="#work" onclick="responsiveToggle()"><i class="fas fa-briefcase"></i><span class="navText">Work</span></a>
+            </li>
+            <li class="animate__animated animate__lightSpeedInLeft">
+                <a href="#contact" onclick="responsiveToggle()"><i class="fas fa-envelope"></i><span class="navText">Contact</span></a>
+            </li>
+            <li>
+                <a id="resume-responsive" href="static/pages/cv.html" target="_blank">Resume</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div id="home">
+                <h1>Hi,<br />
+                    I'm Miguel,<br />
+                    I design things for the web
+                </h1>
+                    <h3>
+                        I'm a Frontend Developer
+                </h3>
+            </div>
+            <div id="about">
+                <h1>About</h1>
+            </div>
+            <div id="work">
+                <h1>Work</h1>
+            </div>
+            <div id="contact">
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <div class="links">
+            <li> 
+                <a href="https://github.com/Miguel-0809" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/miguel_p987/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/miguelangel.paucarnavarro/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </li>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
