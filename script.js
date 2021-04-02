@@ -17,3 +17,21 @@ const responsiveToggle=()=>{
 
 //When a page loads
 setTimeout(toggleNav,3000);
+
+//Smooth scroll
+var scroll = new SmoothScroll('a[href*="#home"]',{
+    speed:400,
+    speedAsDuration: true
+});
+var scroll = new SmoothScroll('a[href*="#about"]');
+var scroll = new SmoothScroll('a[href*="#work"]');
+var scroll = new SmoothScroll('a[href*="#contact"]');
+
+// Scroll Reveal
+
+let nodelist=document.querySelectorAll('.section')
+
+ScrollReveal().reveal(nodelist, { 
+    delay: 300,
+    reset:true 
+});
